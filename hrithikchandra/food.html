@@ -1,0 +1,284 @@
+<!-- Navandeep Singh 1896509-->
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Book My Show</title>
+    <link rel="stylesheet"  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script type="text/javascript" src="js/jsFile.js"></script>
+    <style>
+        /* General Styles */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        h2 {
+            color: #333;
+        }
+
+        a {
+            text-decoration: none;
+            color: #333;
+        }
+
+        /* Announcement Banner */
+        .announcement {
+            background-color: #ffcc00;
+            padding: 10px;
+            text-align: center;
+        }
+
+        .announcement-message {
+            margin: 0;
+            font-weight: bold;
+        }
+
+        /* Navbar */
+        .Navbar {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            background-color: #333;
+            overflow: hidden;
+        }
+
+        .Navbar li {
+            float: left;
+        }
+
+        .Navbar li a, .Navbar input {
+            display: block;
+            padding: 14px 20px;
+            color: white;
+            text-align: center;
+        }
+
+        .Navbar input {
+            border: none;
+            width: 300px;
+            margin-top: 8px;
+            margin-left: 20px;
+            padding: 5px;
+        }
+
+        .logo a {
+            font-size: 1.5em;
+            font-weight: bold;
+        }
+
+        .logoColr2 {
+            color: #ffcc00;
+        }
+
+        /* Secondary Navbar */
+        #secondaryNavbar {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            background-color: #444;
+            overflow: hidden;
+        }
+
+        #secondaryNavbar li {
+            float: left;
+        }
+
+        #secondaryNavbar li a {
+            display: block;
+            padding: 10px 15px;
+            color: white;
+            text-align: center;
+        }
+
+        #secondaryNavbar li a.active {
+            background-color: #ffcc00;
+            color: #333;
+        }
+
+        /* Food Section */
+        #foodContainer {
+            width: 80%;
+            margin: 20px auto;
+            background-color: white;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+
+        #foodTable {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        #foodHead {
+            background-color: #ffcc00;
+            color: #333;
+            text-align: center;
+            padding: 10px;
+        }
+
+        .tableTd {
+            padding: 20px;
+            vertical-align: top;
+        }
+
+        .foodItemHead {
+            margin-top: 0;
+            color: #ffcc00;
+        }
+
+        .foodP {
+            color: #666;
+        }
+
+        /* Footer */
+        .footer {
+            background-color: #333;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        .footer a {
+            color: #ffcc00;
+        }
+
+        .footer a:hover {
+            color: #fff;
+        }
+
+        .footer table {
+            width: 80%;
+            margin: 20px auto;
+        }
+
+        .footer table th, .footer table td {
+            padding: 10px;
+            text-align: left;
+        }
+
+        .footer hr {
+            border: 0;
+            height: 1px;
+            background: #444;
+        }
+
+        .footer .fa {
+            padding: 10px;
+            font-size: 20px;
+            color: white;
+            text-decoration: none;
+        }
+
+        .footer .fa:hover {
+            opacity: 0.7;
+        }
+
+        /* Subscribe Section */
+        #emailFooter {
+            width: 70%;
+            padding: 10px;
+            border: none;
+            margin-top: 10px;
+        }
+
+        .emailFooter {
+            padding: 10px;
+            background-color: #ffcc00;
+            border: none;
+            cursor: pointer;
+        }
+
+        .emailFooter:hover {
+            background-color: #333;
+            color: white;
+        }
+    </style>
+</head>
+<body id="foodBody">
+    <div class="announcement">
+        <p class="announcement-message">WE'RE BACK. DUE TO PANDEMIC SOME THEATRES HAVE CHANGED TIMINGS. PLEASE CONTACT US IF YOU HAVE ANY QUESTIONS. </p>
+    </div>
+
+    <div>
+        <ul class="Navbar">
+            <li class="logo"><a id="logoText" href="index.html">Book<span class="logoColr2">My</span>Show </a></li>
+            <li class="logo"><input type="text" id="search" placeholder="Search for Movies, Events and Sports."></li>
+            <li class="dropdown">
+                <!-- <select class="dropdown">
+                    <option  value="English">ENGLISH</option>
+                    <option value="French">FRENCH</option>
+                </select> -->
+            </li>
+            <li><a href="signup.html"  >SIGNUP</a></li>
+            <li><a href="Login.html" >LOG IN</a></li> 
+            <li><a href="contact.html">CONTACT</a> </li>
+            <li><a href="about.html">ABOUT US</a> </li>
+            <li><a href="index.html" >HOME</a> 
+        </ul>
+    </div>
+
+    <div>
+        <ul id="secondaryNavbar">
+            <li class="secondaryNavbar"><a id="logoText" href="movies.html">Movies</a></li>
+            <li class="secondaryNavbar"><a id="logoText" href="events.html">Events</a></li>
+            <li class="secondaryNavbar"><a id="logoText" href="food.html"  class="active">Food & Drink</a></li>
+            <li class="secondaryNavbar"><a id="logoText" href="quote.html">Get-a-Quote</a></li>
+            <li class="secondaryNavbar"><a id="logoText" href="offers.html">Giftcards</a></li>
+        </ul>
+    </div>
+
+    <div id="foodContainer">
+        <table id="foodTable">
+            <tr>
+                <td colspan="2" id="foodHead"><h2>FOOD & DRINKS</h2></td>
+            </tr>
+
+            <tr>
+                <td class="tableTd">
+                    <h2 class="foodItemHead">Popcorn</h2>
+                    <p class="foodP"> There’s nothing better than that feeling you get sitting in a theatre as the lights go down snacking on a bag of our hot, 
+                        freshly-made Cineplex popcorn. We pop it right before your eyes to fluffy, salty, crunchy perfection then top it off with buttery goodness. 
+                        Great for sharing or just enjoying for yourself!</p>
+                </td>
+                <td class="tableTd">
+                    <img src="popcorn.jpg" width="100%">
+                </td>
+            </tr>
+
+            <tr>
+                <td class="tableTd">
+                    <img src="coke.jpg" width="100%" >
+                </td>
+                <td class="tableTd">
+                    <h2 class="foodItemHead">Coke</h2>
+                    <p class="foodP"> There’s nothing better than that feeling you get sitting in a theatre as the lights go down snacking on a bag of our hot, 
+                        freshly-made Cineplex popcorn. We pop it right before your eyes to fluffy, salty, crunchy perfection then top it off with buttery goodness. 
+                        Great for sharing or just enjoying for yourself!</p>
+                </td>
+            </tr>
+
+            <tr>
+                <td class="tableTd">
+                    <h2 class="foodItemHead">Sandwich!</h2>
+                    <p class="foodP"> A hero ain’t nothing but a sandwich, and our sandwiches are the just that – heroes! Who’s your hero – Pulled Pork, Grilled Chicken or Crispy Chicken? 
+                        Our pulled pork is slow roasted, topped with crispy onions, BBQ and Cineplex sauce. Chicken your thing? We’ve got the sandwich for you – choose from
+                        grilled or crispy chicken, then choose from our Classic, California, Jalapeno and Cheddar or Club creations.</p>
+                </td>
+                <td class="tableTd">
+                    <img src="sand.jpg" width="100%">
+                </td>
+            </tr>
+
+            <tr>
+                <td class="tableTd">
+                    <img src="burger.jpg" width="100%">
+                </td>
+                <td class="tableTd">
+                    <h2 class="foodItemHead">Burger</h2>
+                    <p class="foodP"> What’s the greatest trilogy in history? Fries, cheese curds and gravy! Our golden fries are topped with cheese curds and smothered in gravy
+                        – a real Canadian classic. Want to take it to the next level? We thought you would, cuz we think more is more! Try our amped up burgers 
+                        .</p>
+                </td>

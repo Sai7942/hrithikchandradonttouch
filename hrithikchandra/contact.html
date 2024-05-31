@@ -1,0 +1,346 @@
+<!-- Navandeep Singh 1896509-->
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Book My Show</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script type="text/javascript" src="js/jsFile.js"></script>
+    <style>
+        /* General Styles */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        a {
+            color: inherit;
+            text-decoration: none;
+        }
+
+        /* Announcement Styles */
+        .announcement {
+            background-color: #ffcc00;
+            color: #000;
+            text-align: center;
+            padding: 10px 0;
+        }
+
+        .announcement-message {
+            margin: 0;
+            font-weight: bold;
+        }
+
+        /* Navbar Styles */
+        .Navbar, #secondaryNavbar {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            background-color: #333;
+            overflow: hidden;
+        }
+
+        .Navbar li, .secondaryNavbar li {
+            float: left;
+        }
+
+        .Navbar li a, .secondaryNavbar li a {
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 20px;
+            text-decoration: none;
+        }
+
+        .Navbar li a:hover, .secondaryNavbar li a:hover, .active {
+            background-color: #111;
+        }
+
+        #search {
+            margin: 10px;
+            padding: 10px;
+            width: 300px;
+            border-radius: 4px;
+            border: 1px solid #ccc;
+        }
+
+        /* Contact Table Styles */
+        #contactTable {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        .contactTd, .loginTd {
+            vertical-align: top;
+            padding: 20px;
+        }
+
+        .headingContact {
+            margin: 0;
+            font-size: 24px;
+        }
+
+        .contactPositionHead {
+            font-weight: bold;
+            margin-top: 20px;
+        }
+
+        .contactTd {
+            margin-top: 10px;
+        }
+
+        .linkContact {
+            color: #333;
+            text-decoration: underline;
+        }
+
+        /* Footer Styles */
+        .footer {
+            background-color: #333;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        .footer a {
+            color: white;
+            margin: 0 10px;
+        }
+
+        .footer-message {
+            margin: 20px 0;
+        }
+
+        #buttonFooter {
+            background-color: #ffcc00;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+            border-radius: 4px;
+        }
+
+        #buttonFooter:hover {
+            background-color: #e6b800;
+        }
+
+        .footerLinks {
+            color: #ffcc00;
+        }
+
+        .footerLinks:hover {
+            color: #e6b800;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+        }
+
+        table th, table td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: left;
+        }
+
+        table th {
+            background-color: #333;
+            color: white;
+        }
+
+        #emailFooter {
+            padding: 10px;
+            width: 80%;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        .emailFooter {
+            padding: 10px;
+            background-color: #ffcc00;
+            border: none;
+            cursor: pointer;
+            border-radius: 4px;
+        }
+
+        .emailFooter:hover {
+            background-color: #e6b800;
+        }
+    </style>
+</head>
+<body>
+    <div class="announcement">
+        <p class="announcement-message">WE'RE BACK. DUE TO PANDEMIC SOME THEATRES HAVE CHANGED TIMINGS. PLEASE CONTACT US IF YOU HAVE ANY QUESTIONS. </p>
+    </div>
+
+    <div>
+        <ul class="Navbar">
+            <li class="logo"><a id="logoText" href="index.html">Book<span class="logoColr2">My</span>Show </a></li>
+            <li class="logo"><input type="text" id="search" placeholder="Search for Movies, Events and Sports."></li>
+            <li class="dropdown">
+                <!-- <select class="dropdown">
+                    <option value="English">ENGLISH</option>
+                    <option value="French">FRENCH</option>
+                </select> -->
+            </li>
+            <li><a href="signup.html" >SIGNUP</a></li>
+            <li><a href="Login.html"  >LOG IN</a></li> 
+            <li><a href="contact.html" class="active">CONTACT</a> </li>
+            <li><a href="about.html">ABOUT US</a> </li>
+            <li><a href="index.html" >HOME</a></li>
+        </ul>
+    </div>
+
+    <div>
+        <ul id="secondaryNavbar">
+            <li class="secondaryNavbar"><a id="logoText" href="movies.html">Movies</a></li>
+            <li class="secondaryNavbar"><a id="logoText" href="events.html">Events</a></li>
+            <li class="secondaryNavbar"><a id="logoText" href="food.html">Food & Drink</a></li>
+            <li class="secondaryNavbar"><a id="logoText" href="quote.html">Get-a-Quote</a></li>
+            <li class="secondaryNavbar"><a id="logoText" href="offers.html">Giftcards</a></li>
+        </ul>
+    </div>
+
+    <table id="contactTable">
+        <tr>
+            <td class="loginTd">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3807.135319812204!2d78.4519883144221!3d17.385044406472597!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb98c3d8b96b71%3A0xa0b452cd738586f0!2sHyderabad%2C%20Telangana%2C%20India!5e0!3m2!1sen!2s!4v1621858290660!5m2!1sen!2s" 
+        width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" width="100%" height="970" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+            </td>
+
+            <td class="contactTd">
+                <h1 class="headingContact">Get in touch</h1>
+                <h1 class="headingContact">with us</h1>
+
+                <div class="contactPositionHead">
+                    Address
+                </div>
+                <div class="contactTd">
+                    577 Boul Henri-Bourassa E, <br>
+                    Montréal, <br>
+                    QC H2C 1E2 <br>
+                </div>
+
+                <div class="contactPositionHead">
+                    Business Hours
+                </div>
+                <div class="contactTd">
+                    Mon – Fri: 9:00 AM - 5:00 PM
+                </div>
+
+                <div class="contactPositionHead">
+                    Customer Services/Sales
+                </div>
+                <div class="contactTd">
+                    Diljit D. <br>
+                    1-(514) 123-456 <br>
+                    <a href="mailto:sanjayparmar313@gmail.com" class="linkContact">Contact me!</a>
+                </div>
+
+                <div class="contactPositionHead">
+                    Online Manager
+                </div>
+                <div class="contactTd">
+                    Gippy G. <br>
+                    1-(514) 234-3453 <br>
+                    <a href="mailto:sanjayparmar313@gmail.com" class="linkContact">Contact me!</a>
+                </div>
+
+                <div class="contactPositionHead">
+                    Editor Chief
+                </div>
+                <div class="contactTd">
+                    Sidhu M. <br>
+                    1-(514) 234-4535 <br>
+                    <a href="mailto:sanjayparmar313@gmail.com" class="linkContact">Contact me!</a>
+                </div>
+
+                <div class="contactPositionHead">
+                    Purchasing (suppliers)
+                </div>
+                <div class="contactTd">
+                    Karan A. <br>
+                    1-(514) 435-4355 <br>
+                    <a href="mailto:sanjayparmar313@gmail.com" class="linkContact">Contact me!</a>
+                </div>
+            </td>
+        </tr>
+    </table>
+
+    <footer class="footer">
+        <div class="footer-message">
+            <span id="footerText">List your Show</span>
+            Got a show, event, activity or a great experience? Partner with us & get listed on BookMyShow
+            <a href="contact.html"><button id="buttonFooter">Contact today!</button></a>
+        </div>
+        <div class="horizontal">
+            <hr>
+        </div>
+    </footer>
+
+    <table>
+        <tr>
+            <th>Navigate</th>
+            <th>Help</th>
+            <th>Top Movies and Events</th>
+            <th>Newsletter</th>
+        </tr>
+        <tr>
+            <td><a href="index.html" class="footerLinks">Home</a></td>
+            <td><a href="#search" class="footerLinks">Search</a></td>
+            <td><a href="movies.html" class="footerLinks">Avengers</a></td>
+            <td rowspan="2">Get updates, news and specials before anyone else.</td>
+        </tr>
+        <tr>
+            <td><a href="signup.html" class="footerLinks">Signup</a></td>
+            <td><a href="quote.html" class="footerLinks">Get-a-Quote</a></td>
+            <td><a href="movies.html" class="footerLinks">Chal mera putt 2</a></td>
+        </tr>
+        <tr>
+            <td><a href="login.html" class="footerLinks">Log In</a></td>
+            <td><a href="contact.html" class="footerLinks">Help</a></td>
+            <td><a href="movies.html" class="footerLinks">Bloodshot</a></td>
+            <td rowspan="2">
+                <input type="email" placeholder="Type you email here.." id="emailFooter">
+                <span><button class="emailFooter">Subscribe</button></span>
+            </td>
+        </tr>
+        <tr>
+            <td><a href="about.html" class="footerLinks">About</a></td>
+            <td><a href="conditions.html" class="footerLinks">Terms & Conditions</a></td>
+            <td><a href="movies.html" class="footerLinks">Scoob!</a></td>
+        </tr>
+        <tr>
+            <td><a href="movies.html" class="footerLinks">Movies</a></td>
+            <td></td>
+            <td><a href="movies.html" class="footerLinks">The invisible man</a></td>
+        </tr>
+        <tr>
+            <td><a href="contact.html" class="footerLinks">Contact</a></td>
+            <td></td>
+            <td><a href="movies.html" class="footerLinks">Underwater</a></td>
+        </tr>
+    </table>
+
+    <div class="footer">
+        <hr>
+    </div>
+
+    <table>
+        <tr>
+            <th>
+                <p class="footer">Copyright &copy; 2020 All Rights Reserved by BookMyShow</p>
+            </th>
+            <th>
+                <a href="https://www.facebook.com/navandeep.singh.73" class="fa fa-facebook"></a>
+                <a href="https://twitter.com/explore" class="fa fa-twitter"></a>
+                <a href="https://www.instagram.com/navan.rana/" class="fa fa-instagram"></a>
+                <a href="mailto:navandeep0511@gmail.com" class="fa fa-google"></a>
+                <a href="https://www.youtube.com/channel/UChzUn-zq1V6KnQHSe24okFg?view_as=subscriber" class="fa fa-youtube"></a>
+            </th>
+        </tr>
+    </table>
+</body>
+</html>
